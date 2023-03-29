@@ -113,6 +113,7 @@ services:
       - "80:80"
     volumes:
       - ./caddy:/etc/caddy
+      - ./certs:/certs
     environment:
       - ADMIN_USER=${ADMIN_USER:-admin}
       - ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin}
