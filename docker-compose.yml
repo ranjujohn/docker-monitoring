@@ -41,6 +41,7 @@ services:
     command:
       - '--config.file=/etc/alertmanager/config.yml'
       - '--storage.path=/alertmanager'
+      - '--web.external-url=https://alertmanager.customer1-internal.difinative.io'
     restart: unless-stopped
     expose:
       - 9093
